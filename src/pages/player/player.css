@@ -1,0 +1,12 @@
+.playerVideo {
+    justify-content: center;
+    display: flex;
+    ;}
+
+.playerVideo h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
