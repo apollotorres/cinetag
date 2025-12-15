@@ -1,0 +1,45 @@
+
+
+.catalogo
+{
+    
+    flex: 0 0 5em;
+    padding: 50px;
+
+    
+
+}   
+
+.grupo
+{
+    display: flex;
+        gap: 16px;
+        overflow-x: auto;
+
+
+}
+
+    ::-webkit-scrollbar{
+    }
+
+.outrogrupo
+{
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    padding: 24px;
+    
+}
+
+
+
+    
+
+@keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%;}
+    
+}
+

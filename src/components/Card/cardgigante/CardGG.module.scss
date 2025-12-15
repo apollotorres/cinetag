@@ -1,0 +1,80 @@
+.container{
+ 
+    padding: 0 0 1em 0;
+    margin-top: .5em;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+
+    .capa {
+    background-color: #000000;
+    width: 350px;
+    height: 500px; 
+    object-fit: cover; 
+    opacity: 1;}  
+    transition: all .6s;
+
+    .infos{
+    position: absolute;
+    bottom: 0;
+
+    background: linear-gradient(#00000000, #000000 90%);
+        height: 200px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        padding: 10px;
+
+    padding: 0 1em 1em 1em;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    color: #52bd00;
+
+            .titulo{
+                    color: #fff;
+            
+            }
+
+            .toinvisivel{
+            color: #fff;
+             font-size: 12px;
+             margin-top: 8px;
+             height: 0px;
+             opacity: 0px;
+             transition:  all .6s;
+}
+}
+
+
+
+
+
+
+&:hover{
+    cursor: pointer;
+
+    .capa {
+        opacity: 0.5;
+    }
+
+    .toinvisivel{
+        opacity: 1;
+        height: 100px;
+    }
+}
+
+            
+
+
+
+}
+
+
+
+

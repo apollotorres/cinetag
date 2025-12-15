@@ -6,9 +6,10 @@
 }
 
 body {
+  color: #FFFFFF;
   margin: 0;
   font-family: var(--fonte);
-  background-color: var(--branco);
+  background-color: #000000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -16,4 +17,5 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+    
 }

@@ -3,11 +3,10 @@ import Container from "components/Container";
 import Rodape from "components/Rodape";
 import Favoritos from "pages/favoritos";
 import Inicio from "pages/inicio";
-import { Player } from "pages/player/player";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-function AppRoutes() 
-{
+import { Testes } from "pages/TETES";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
+function AppRoutes() {
     return (
         <BrowserRouter>
             <Cabecalho />
@@ -15,10 +14,10 @@ function AppRoutes()
                 <Routes>
                     <Route path="/" element={<Inicio />}></Route>
                     <Route path="/favoritos" element={<Favoritos />}></Route>
-                    <Route path="/player" element={<Player />}></Route>
+                    <Route path="/testes" element={<Testes />}></Route>
                 </Routes>
             </Container>
-            <Rodape /> 
+            <Rodape />
         </BrowserRouter>
     )
 }
