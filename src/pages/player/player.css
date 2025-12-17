@@ -10,3 +10,16 @@
     display: flex;
     justify-content: center;
 }
+
+.player {
+justify-content: center;    
+display: flex;
+}
+
+.video{
+padding: 100px;
+width: 5000px;
+height: 900px;
+
+}
+

@@ -4,6 +4,7 @@ import axios from 'axios';
 import Card from 'components/Card';
 import { use } from 'react';
 import CardGG from 'components/Card/cardgigante';
+import { Link } from 'react-router-dom';
 
 
 export const Testes = () => {

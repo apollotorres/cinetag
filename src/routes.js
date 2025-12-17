@@ -3,6 +3,7 @@ import Container from "components/Container";
 import Rodape from "components/Rodape";
 import Favoritos from "pages/favoritos";
 import Inicio from "pages/inicio";
+import { Player } from "pages/player/player";
 import { Testes } from "pages/TETES";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
@@ -12,9 +13,9 @@ function AppRoutes() {
             <Cabecalho />
             <Container>
                 <Routes>
-                    <Route path="/" element={<Inicio />}></Route>
                     <Route path="/favoritos" element={<Favoritos />}></Route>
-                    <Route path="/testes" element={<Testes />}></Route>
+                    <Route path="/" element={<Testes />}></Route>
+                    <Route path="/Player" element={<Player />}></Route>
                 </Routes>
             </Container>
             <Rodape />
