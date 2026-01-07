@@ -33,6 +33,16 @@
     
 }
 
+.series
+{
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    margin-left: 24px;
+    margin-bottom: -16px;
+}
+
 
 
     

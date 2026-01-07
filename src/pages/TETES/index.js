@@ -2,9 +2,7 @@ import { useEffect, useState } from 'react';
 import './index.css';
 import axios from 'axios';
 import Card from 'components/Card';
-import { use } from 'react';
 import CardGG from 'components/Card/cardgigante';
-import { Link } from 'react-router-dom';
 
 
 export const Testes = () => {
@@ -15,7 +13,7 @@ export const Testes = () => {
         
 
 
-
+ 
         const getmovies = () => {
                 axios({
 
@@ -31,11 +29,12 @@ export const Testes = () => {
                         console.log(response.data.results)
 
         })
-
         }
-                                getmovies();
+        getmovies();
 
-        }, [])
+        }, 
+        []
+     )
 
         
 
@@ -57,7 +56,8 @@ export const Testes = () => {
                         language: 'pt-BR'
                     }
         
-                    }).then(response => {
+                    })
+                    .then(response => {
                         setmoovies(response.data.results);
                         console.log(response.data.results)
 
@@ -70,12 +70,9 @@ export const Testes = () => {
 
 
         
-
-        
         
 
 /////////////////////////////////////////////////////
-
 
 
 
@@ -83,6 +80,7 @@ export const Testes = () => {
 
         
         
+
         <div className='catalogo'>
             
                 <h1>Explore</h1>
@@ -101,9 +99,11 @@ export const Testes = () => {
             </div>
                
             
-
-
+<div className='series'>       
+  <h1>Series iradas</h1>
+</div>
             <div className='outrogrupo'>
+
                 {moovies.map((moovie) =>
             <CardGG 
                         
@@ -124,7 +124,6 @@ export const Testes = () => {
    
 
       
-
        
 )
 }
